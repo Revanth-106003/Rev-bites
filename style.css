@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("bg.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+
+ul {
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+    margin-right: 10px;
+    font-size: 19px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    color: #FFF8E8;
+    text-decoration: none;
+    padding: 7px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+ul li a:hover {
+    background-color: #CBD2A4;
+    color: rgb(196, 246, 246);
+}
+.nav-link.active
+{
+    background-color: rgb(113, 178, 187);
+    color: #FFF8E8;
+}
+header { 
+    width: 100%; 
+    background: rgba(0, 0, 0, 0); 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-left:10px;
+    margin-top:5px; 
+}
+
+.main {
+    margin: auto;
+    overflow: hidden; /* Ensures floating elements are contained */
+}
+
+section {
+    padding: 80px 20px 20px;
+    margin: 90px 0; /* Ensure separation between sections */
+    border-radius: 10px;
+    scroll-margin-top:60px;
+    overflow: hidden;
+}
+.home{
+    height:500px;
+}
+.home .home-content {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative; /* Changed from absolute to relative */
+    top:10%; /* Adjusted for better spacing */
+    left:26%;
+}
+
+.home .home-content h1 {
+    font-size: 80px;
+    color: #FFF8E8;
+}
+
+.home .home-content p {
+    color: #FFF8E8;
+    font-size: 30px;
+    padding-left:60px;
+}
+
+.home .home-content span {
+    color: #FFF8E8;
+    font-size: 20px;
+    padding-left:0px;
+}
+.dessert{
+    height:600px;
+}
+.dessert h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+    color: aqua;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.dessert .dessert-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+
+.dessert .dessert-content ul {
+    color: #FFF8E8;
+    list-style-type: square;
+    padding-left: 20px;
+    flex: 1; /* Make the list flexible */
+    margin-right:10px; /* Increase space to the right of the list */
+}
+.dessert .dessert-content ul li{
+    display: list-item;
+}
+
+.dessert .dessert-content img {
+    width: 150%; /* Adjust to desired width */
+    max-width: 150px; /* Set a max-width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 170px; /* Space between the list and the paragraph */
+    flex: 1; /* Make the image flexible */
+    margin-left: 10px;
+    border: 3px solid rgb(222, 206, 34);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: #CBD2A4;
+}
+.dessert .dessert-content img:hover{
+    transform: scale(1.5);
+    box-shadow: 0 10px 20px rgba(205, 227, 232, 0.5);;
+}
+
+.dessert .dessert-content p {
+    color: #FFF8E8;
+    flex: 1; /* Make the paragraph flexible */
+}
+
+.dessert .dessert-content p span {
+    color:#4cf04c;
+}
+.dessert button{
+    color:#1f2403;
+    background-color: azure;
+    margin-left:40.5%;
+    border-radius:5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+.dessert button:hover
+{
+    color: #4cf04c;
+}
+.biriyani h2{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+    color: aqua;
+    font-size: 50px;
+    font-weight: 600;
+}
+.biriyani .biriyani-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+.biriyani .biriyani-content ul{
+    color: #FFF8E8;
+    list-style-type: square;
+    padding-left: 20px;
+    flex: 1; /* Make the list flexible */
+    margin-right:10px; /* Increase space to the right of the list */
+}
+.biriyani .biriyani-content ul li{
+    display: list-item;
+}
+.biriyani .biriyani-content img {
+    width: 100%; /* Adjust to desired width */
+    max-width: 150px; /* Set a max-width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 50px 170px; /* Space between the list and the paragraph */
+    flex: 1;          /* Make the image flexible */
+    margin-left: 10px;
+    border: 3px solid rgb(222, 206, 34);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: #CBD2A4;
+}
+.biriyani .biriyani-content img:hover
+{
+    transform:scale(1.5);
+    box-shadow: 0 10px 20px rgba(205, 227, 232, 0.5);;
+}
+.biriyani .biriyani-content p{
+    color: #FFF8E8;
+    flex: 1;
+}
+.biriyani .biriyani-content p span{
+    color:#FF9800;
+}
+.biriyani button{
+    color:#1f2403;
+    background-color: azure;
+    margin-left:40.5%;
+    border-radius:5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+.biriyani button:hover
+{
+    color:#FF9800;
+}
+.pasta{
+    height: 450px;
+}
+.pasta h2{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+    color: aqua;
+    font-size: 50px;
+    font-weight: 600;
+}
+.pasta .pasta-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+.pasta .pasta-content ul{
+    color: #FFF8E8;
+    list-style-type: square;
+    padding-left: 20px;
+    flex: 1; /* Make the list flexible */
+    margin-right:10px; /* Increase space to the right of the list */
+}
+.pasta .pasta-content ul li{
+    display: list-item;
+}
+.pasta .pasta-content img {
+    width: 100%; /* Adjust to desired width */
+    max-width: 150px; /* Set a max-width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 15px 170px; /* Space between the list and the paragraph */
+    flex: 1;          /* Make the image flexible */
+    margin-left: 10px;
+    border: 3px solid rgb(222, 206, 34);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: #CBD2A4;
+}
+.pasta .pasta-content img:hover{
+    transform: scale(1.5);
+    box-shadow: 0 10px 20px rgba(145, 216, 222, 0.5);;
+}
+.pasta .pasta-content p{
+    color: #FFF8E8;
+    flex: 1;
+}
+.pasta .pasta-content p span{
+    color:#FFD700;
+}
+.pasta button{
+    color:#1f2403;
+    background-color: azure;
+    margin-top: 10px;
+    margin-left:40.5%;
+    border-radius:5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+.pasta button:hover{
+    color: #FFD700;
+}
+.salad{
+    height: 438px;
+}
+.salad h2{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+    color: aqua;
+    font-size: 50px;
+    font-weight: 600;
+}
+.salad .salad-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+.salad .salad-content ul {
+    color: #FFF8E8;
+    list-style-type: square;
+    padding-left: 20px;
+    flex: 1; /* Make the list flexible */
+    margin-right:10px; /* Increase space to the right of the list */
+}
+.salad .salad-content ul li{
+    display: list-item;
+}
+.salad .salad-content img{
+    width: 100%; /* Adjust to desired width */
+    max-width: 150px; /* Set a max-width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 170px; /* Space between the list and the paragraph */
+    flex: 1;          /* Make the image flexible */
+    margin-left: 10px;
+    border: 3px solid rgb(222, 206, 34);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: #CBD2A4;
+}
+.salad .salad-content img:hover{
+    transform: scale(1.5);
+    box-shadow: 0 10px 20px rgba(205, 227, 232, 0.5);;
+}
+.salad .salad-content p{
+    color: #FFF8E8;
+    flex: 1;
+}
+.salad .salad-content p span{
+    color:#FF76CE;
+}
+.salad button{
+    color:#1f2403;
+    background-color: azure;
+    margin-left:40.5%;
+    border-radius:5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+.salad button:hover{
+    color: #FF76CE;
+}
+.pizza{
+    height: 400px;
+}
+.pizza h2{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+    color: aqua;
+    font-size: 50px;
+    font-weight: 600;
+}
+.pizza .pizza-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+.pizza .pizza-content ul {
+    color: #FFF8E8;
+    list-style-type: square;
+    padding-left: 20px;
+    flex: 1; /* Make the list flexible */
+    margin-right:10px; /* Increase space to the right of the list */
+}
+.pizza .pizza-content ul li{
+    display: list-item;
+}
+.pizza .pizza-content img{
+    width: 100%; /* Adjust to desired width */
+    max-width: 150px; /* Set a max-width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 170px; /* Space between the list and the paragraph */
+    flex: 1;          /* Make the image flexible */
+    margin-left: 10px;
+    border: 3px solid rgb(222, 206, 34);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: #CBD2A4;
+}
+.pizza .pizza-content img:hover{
+    transform: scale(1.5);
+    box-shadow: 0 10px 20px rgba(205, 227, 232, 0.5);;
+}
+.pizza .pizza-content p{
+    color: #FFF8E8;
+    flex: 1;
+}
+.pizza .pizza-content p span{
+    color:#D0A2F7;
+}
+.pizza button{
+    color:#1f2403;
+    background-color: azure;
+    margin-top:30px;
+    margin-left:40.5%;
+    border-radius:5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+.pizza button:hover{
+    color: #D0A2F7;
+}
+footer{
+    color: #FFF8E8; 
+    text-align: center; 
+    padding: 20px; 
+    position:relative; 
+    bottom: 0; 
+    right: 0; 
+    width: 100%; 
+    box-sizing: border-box;
+} 
+.footer-content {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+} 
+.footer-content p { 
+     margin: 5px 0; 
+}
